@@ -1,10 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Furkan Çakıcı - Portfolyo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Çakıcı | Portfolyo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Harici CSS dosyasını bağlama -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Merhaba, Ben Furkan Çakıcı</h1>
-    <p>Portfolyo sitem yapım aşamasındadır.</p>
+
+    <nav>
+        <a href="#home" class="logo">Furkan Çakıcı</a>
+        <div class="nav-links">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#experience">Deneyim</a>
+            <a href="#projects">Projeler</a>
+            <a href="#skills">Yetenekler</a>
+            <a href="#contact">İletişim</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="hero-title">Furkan Çakıcı</h1>
+        <h2 class="hero-subtitle">Bilgisayar Mühendisi</h2>
+        <p class="hero-desc">
+            Amasya Üniversitesi Bilgisayar Mühendisliği mezunu; oyun geliştirme, yazılım ve ağ altyapıları alanlarında deneyimli bir mühendistir. Ekip çalışmasına yatkın, öğrenmeye açık ve sorumluluk bilinci yüksek bir profil çizmektedir.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/furkan-cakici" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/furkan-çakici/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:furkancakici2611@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Deneyim & Eğitim</h2>
+        <div class="grid-container">
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Bilgi İşlem (IT) ve Yazılım Stajyeri</div>
+                    <div class="card-date">Temmuz 2026 - Mevcut</div>
+                </div>
+                <ul class="card-list">
+                    <li>FastAPI tabanlı Backend servislerini Render platformu üzerinde canlıya alarak projenin bulut mimari entegrasyonunu sağladı.</li>
+                    <li>Streamlit tabanlı bir arayüz geliştirerek sistem verilerinin web üzerinden yönetilebilmesini sağladı.</li>
+                    <li>SQLite veritabanı yapısını sunucu ortamına entegre ederek CRUD operasyonlarını optimize etti.</li>
+                    <li>Fiber optik hat testleri (VFL) ve IP tabanlı kamera ağ yönetimi gibi fiziksel ağ altyapısı görevlerini üstlendi.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Stajyer</div>
+                    <div class="card-date">Temmuz 2024 - Ağustos 2024</div>
+                </div>
+                <div class="card-subtitle">İSTİKAMET DÖKÜM A.Ş. | Bilecik</div>
+                <ul class="card-list">
+                    <li>Döküm sektöründe yazılım ve sistem süreçleri hakkında uygulama deneyimi kazandı.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Amasya Üniversitesi</div>
+                    <div class="card-date">2021 - 2025</div>
+                </div>
+                <div class="card-subtitle">Bilgisayar Mühendisliği (Lisans)</div>
+                <ul class="card-list">
+                    <li><strong>Google DSC Amasya:</strong> Grafik Tasarım Yöneticisi & Başkan Yardımcısı (Eylül 2023 - Eylül 2024)</li>
+                    <li><strong>Yeşilay:</strong> Teknoloji Bağımlılığı ile mücadele biriminde yönetim kurulu üyesi / gönüllü.</li>
+                    <li><strong>IEEE:</strong> Üniversite öğrenci kulübü üyesi.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" style="background-color: #eef2f3;">
+        <h2 class="section-title">Projeler</h2>
+        <div class="grid-container">
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Echo of Fury</div>
+                </div>
+                <div class="card-subtitle">Souls-like Oyun Yapay Zekası</div>
+                <ul class="card-list">
+                    <li>Unreal Engine 5 (UE5) Blueprint kullanılarak kural tabanlı, konuma duyarlı modüler bir NPC davranış mimarisi ("Boss AI") geliştirildi.</li>
+                    <li>Oyuncunun Öklid mesafesi ve açısal konumu hesaplanarak 9 farklı saldırı modeli dinamik olarak entegre edildi.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Algoritma & Profil Optimizasyonu</div>
+                </div>
+                <div class="card-subtitle">Python, C++, SQL, GitHub Actions</div>
+                <ul class="card-list">
+                    <li>C++ ile LeetCode problem çözümleri ve algoritma pratikleri gerçekleştirildi.</li>
+                    <li>GitHub Actions yardımıyla profil istatistiklerinin dinamik güncellenmesi sağlandı.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Teknik Yetkinlikler</h2>
+        
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Programlama Dilleri</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">C / C++ / C#</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">MATLAB</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Web & Mobil & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5 / CSS3</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Streamlit</span>
+                    <span class="skill-tag">Android Geliştirme</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Veritabanı</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">Firebase</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Oyun Motorları & Tasarım</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Unreal Engine 5</span>
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe Photoshop</span>
+                    <span class="skill-tag">After Effects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2 class="section-title" style="color: white;">İletişime Geç</h2>
+        <p><i class="fas fa-envelope"></i> furkancakici2611@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Eskişehir / Türkiye</p>
+        <br><br>
+        <p style="font-size: 0.9rem; color: #ccc;">&copy; 2026 Furkan Çakıcı. Tüm hakları saklıdır.</p>
+    </footer>
+
 </body>
 </html>
