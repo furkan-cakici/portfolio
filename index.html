@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furkan Çakıcı | Portfolyo</title>
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Harici CSS dosyasını bağlama -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Michroma&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,21 +21,21 @@
     <nav>
         <a href="#home" class="logo">Furkan Çakıcı</a>
         <div class="nav-links">
-            <a href="#home">Ana Sayfa</a>
-            <a href="#experience">Deneyim</a>
-            <a href="#projects">Projeler</a>
-            <a href="#skills">Yetenekler</a>
-            <a href="#contact">İletişim</a>
+            <a href="#home">ANA SAYFA</a>
+            <a href="#experience">DENEYİM</a>
+            <a href="#projects">PROJELER</a>
+            <a href="#skills">YETENEKLER</a>
+            <a href="#contact">İLETİŞİM</a>
         </div>
     </nav>
 
     <section id="home">
-        <h1 class="hero-title">Furkan Çakıcı</h1>
-        <h2 class="hero-subtitle">Bilgisayar Mühendisi</h2>
-        <p class="hero-desc">
+        <h1 class="hero-title animate-text">Furkan Çakıcı</h1>
+        <h2 class="hero-subtitle animate-text">Bilgisayar Mühendisi</h2>
+        <p class="hero-desc animate-text">
             Amasya Üniversitesi Bilgisayar Mühendisliği mezunu; oyun geliştirme, yazılım ve ağ altyapıları alanlarında deneyimli bir mühendistir. Ekip çalışmasına yatkın, öğrenmeye açık ve sorumluluk bilinci yüksek bir profil çizmektedir.
         </p>
-        <div class="social-links">
+        <div class="social-links reveal">
             <a href="https://github.com/furkan-cakici" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/furkan-çakici/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:furkancakici2611@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -35,14 +43,15 @@
     </section>
 
     <section id="experience">
-        <h2 class="section-title">Deneyim & Eğitim</h2>
+        <h2 class="section-title animate-text">Deneyim & Eğitim</h2>
         <div class="grid-container">
             
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-header">
-                    <div class="card-title">Bilgi İşlem (IT) ve Yazılım Stajyeri</div>
+                    <div class="card-title">Bilgi İşlem (IT) Stajyeri</div>
                     <div class="card-date">Temmuz 2026 - Mevcut</div>
                 </div>
+                <div class="card-subtitle">BİEN A.Ş.</div>
                 <ul class="card-list">
                     <li>FastAPI tabanlı Backend servislerini Render platformu üzerinde canlıya alarak projenin bulut mimari entegrasyonunu sağladı.</li>
                     <li>Streamlit tabanlı bir arayüz geliştirerek sistem verilerinin web üzerinden yönetilebilmesini sağladı.</li>
@@ -51,18 +60,18 @@
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-header">
-                    <div class="card-title">Stajyer</div>
+                    <div class="card-title">Bilgi İşlem (IT) Stajyeri</div>
                     <div class="card-date">Temmuz 2024 - Ağustos 2024</div>
                 </div>
-                <div class="card-subtitle">İSTİKAMET DÖKÜM A.Ş. | Bilecik</div>
+                <div class="card-subtitle">İSTİKAMET DÖKÜM A.Ş.</div>
                 <ul class="card-list">
                     <li>Döküm sektöründe yazılım ve sistem süreçleri hakkında uygulama deneyimi kazandı.</li>
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-header">
                     <div class="card-title">Amasya Üniversitesi</div>
                     <div class="card-date">2021 - 2025</div>
@@ -78,11 +87,11 @@
         </div>
     </section>
 
-    <section id="projects" style="background-color: #eef2f3;">
-        <h2 class="section-title">Projeler</h2>
+    <section id="projects" >
+        <h2 class="section-title animate-text">Projeler</h2>
         <div class="grid-container">
             
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-header">
                     <div class="card-title">Echo of Fury</div>
                 </div>
@@ -93,7 +102,7 @@
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-header">
                     <div class="card-title">Algoritma & Profil Optimizasyonu</div>
                 </div>
@@ -108,64 +117,110 @@
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Teknik Yetkinlikler</h2>
+        <h2 class="section-title animate-text">Teknik Yetkinlikler</h2>
         
         <div class="skills-container">
-            <div class="skills-category">
+            <div class="skills-category reveal">
                 <h3>Programlama Dilleri</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">C / C++ / C#</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">PHP</span>
-                    <span class="skill-tag">Kotlin</span>
-                    <span class="skill-tag">MATLAB</span>
-                </div>
+                <div class="skillbar expert" data-skill="Python"></div>
+                <div class="skillbar advanced" data-skill="C / C++ / C#"></div>
+                <div class="skillbar intermediate" data-skill="Java"></div>
+                <div class="skillbar intermediate" data-skill="Kotlin"></div>
+                <div class="skillbar advanced" data-skill="MATLAB"></div>
+                <div class="skillbar intermediate" data-skill="PHP"></div>
             </div>
 
-            <div class="skills-category">
+            <div class="skills-category reveal">
                 <h3>Web & Mobil & DevOps</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">HTML5 / CSS3</span>
-                    <span class="skill-tag">React.js</span>
-                    <span class="skill-tag">FastAPI</span>
-                    <span class="skill-tag">Streamlit</span>
-                    <span class="skill-tag">Android Geliştirme</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">GitHub Actions</span>
-                </div>
+                <div class="skillbar expert" data-skill="HTML5 / CSS3"></div>
+                <div class="skillbar advanced" data-skill="FastAPI & Streamlit"></div>
+                <div class="skillbar advanced" data-skill="Docker & GitHub Actions"></div>
+                <div class="skillbar intermediate" data-skill="Android Geliştirme"></div>
+                <div class="skillbar intermediate" data-skill="React.js"></div>
             </div>
 
-            <div class="skills-category">
+            <div class="skills-category reveal">
                 <h3>Veritabanı</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">SQL Server</span>
-                    <span class="skill-tag">SQLite</span>
-                    <span class="skill-tag">Firebase</span>
-                </div>
+                <div class="skillbar expert" data-skill="SQLite"></div>
+                <div class="skillbar advanced" data-skill="MySQL"></div>
+                <div class="skillbar advanced" data-skill="SQL Server"></div>
+                <div class="skillbar intermediate" data-skill="Firebase"></div>
             </div>
 
-            <div class="skills-category">
+            <div class="skills-category reveal">
                 <h3>Oyun Motorları & Tasarım</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Unreal Engine 5</span>
-                    <span class="skill-tag">Unity</span>
-                    <span class="skill-tag">Figma</span>
-                    <span class="skill-tag">Adobe Photoshop</span>
-                    <span class="skill-tag">After Effects</span>
-                </div>
+                <div class="skillbar advanced" data-skill="Unreal Engine 5"></div>
+                <div class="skillbar advanced" data-skill="Figma"></div>
+                <div class="skillbar intermediate" data-skill="Unity"></div>
+                <div class="skillbar intermediate" data-skill="Ps & After Effects"></div>
             </div>
         </div>
     </section>
-
-    <footer id="contact">
-        <h2 class="section-title" style="color: white;">İletişime Geç</h2>
-        <p><i class="fas fa-envelope"></i> furkancakici2611@gmail.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Eskişehir / Türkiye</p>
+    <footer id="contact" style="background-color: #2e2e2e;"">
+        <h2 class="section-title animate-text" style="color: white;">İletişime Geç</h2>
+        <p class="reveal"><i class="fas fa-envelope"></i> furkancakici2611@gmail.com</p>
+        <p class="reveal"><i class="fas fa-map-marker-alt"></i> Eskişehir / Türkiye</p>
         <br><br>
-        <p style="font-size: 0.9rem; color: #ccc;">&copy; 2026 Furkan Çakıcı. Tüm hakları saklıdır.</p>
+        <p class="copyright">&copy; 2026 Furkan Çakıcı. Tüm hakları saklıdır.</p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const reveals = document.querySelectorAll(".reveal");
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+
+            // --- 2. KELİME KELİME YAZI ANİMASYONU ---
+            const textElements = document.querySelectorAll('.animate-text');
+            
+            textElements.forEach(el => {
+                const text = el.textContent.trim();
+                const words = text.split(' ');
+                el.innerHTML = ''; 
+                
+                words.forEach((word, index) => {
+                    const wrapper = document.createElement('span');
+                    wrapper.className = 'word-wrapper';
+                    
+                    const wordSpan = document.createElement('span');
+                    wordSpan.className = 'word';
+                    wordSpan.innerHTML = word + '&nbsp;'; 
+                    
+                    wordSpan.style.transitionDelay = `${index * 0.05}s`;
+                    
+                    wrapper.appendChild(wordSpan);
+                    el.appendChild(wrapper);
+                });
+                el.classList.add('ready'); 
+            });
+
+            const textObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const words = entry.target.querySelectorAll('.word');
+                        words.forEach(w => w.classList.add('active')); 
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -20px 0px" });
+
+            textElements.forEach(el => textObserver.observe(el));
+        });
+    </script>
 </body>
 </html>
