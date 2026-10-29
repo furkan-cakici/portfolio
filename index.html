@@ -1,227 +1,1285 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furkan Çakıcı</title>
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Furkan Çakıcı — Bilgisayar Mühendisi [Yeni Mezun] // Backend & Oyun Yazılımı</title>
+    <meta name="title" content="Furkan Çakıcı — Bilgisayar Mühendisi [Yeni Mezun] // Backend & Oyun Yazılımı">
+    <meta name="description" content="Furkan Çakıcı — Bilgisayar Mühendisi (Yeni Mezun). C#, ASP.NET Core, Unreal Engine 5, C++, TÜBİTAK 2209-A destekli yapay zeka ve kurumsal staj deneyimleri.">
+    <meta name="author" content="Furkan Çakıcı">
+    <meta name="theme-color" content="#050505">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data:; form-action 'self' mailto:;">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfoliofurkancakici.site/">
+    <meta property="og:title" content="Furkan Çakıcı — Bilgisayar Mühendisi & Yazılım Geliştirici">
+    <meta property="og:description" content="Ölçeklenebilir backend sistemleri, Unreal Engine 5 oyun yapay zekası ve kurumsal ağ altyapısı geliştiren Bilgisayar Mühendisi.">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='2' width='28' height='28' rx='6' fill='%23000000' stroke='%23ffffff' stroke-width='2'/><text x='16' y='21' font-family='Arial,sans-serif' font-size='12' font-weight='900' fill='%23ffffff' text-anchor='middle' letter-spacing='-0.5'>FÇ</text></svg>">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Michroma&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300..900&family=Geist+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Syncopate:wght@700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-black text-chalk">
 
-    <nav>
-        <a href="#home" class="logo">Furkan Çakıcı</a>
-        <div class="nav-links">
-            <a href="#home">ANA SAYFA</a>
-            <a href="#experience">DENEYİM</a>
-            <a href="#projects">PROJELER</a>
-            <a href="#skills">YETENEKLER</a>
-            <a href="#contact">İLETİŞİM</a>
+    <div class="shell-loader" id="shellLoader" role="status" aria-label="Portfolyo Yükleniyor">
+        <div class="shell-loader-top">
+            <span class="shell-brand">FURKAN ÇAKICI — KİŞİSEL PORTFOLYO // 2026</span>
+            <span class="shell-coords">39.77°N • 30.52°E [ESKİŞEHİR, TÜRKİYE]</span>
         </div>
-    </nav>
-
-    <section id="home">
-        <h1 class="hero-title animate-text">Furkan Çakıcı</h1>
-        <h2 class="hero-subtitle animate-text">Bilgisayar Mühendisi</h2>
-        <p class="hero-desc animate-text">
-            Amasya Üniversitesi Bilgisayar Mühendisliği mezunu; oyun geliştirme, yazılım ve ağ altyapıları alanlarında deneyimli bir mühendistir. Ekip çalışmasına yatkın, öğrenmeye açık ve sorumluluk bilinci yüksek bir profil çizmektedir.
-        </p>
-        <div class="social-links reveal">
-            <a href="https://github.com/furkan-cakici" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/furkan-çakici/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:furkancakici2611@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="shell-loader-center">
+            <div class="shell-count-wrap">
+                <span class="shell-count" id="shellCount">000</span>
+                <span class="shell-unit">%</span>
+            </div>
+            <div class="shell-loader-status" id="shellStatus">PORTFOLYO YÜKLENİYOR...</div>
+            <div class="shell-bar">
+                <div class="shell-bar-fill" id="shellBarFill"></div>
+            </div>
         </div>
-    </section>
+        <div class="shell-loader-bottom">
+            <span>SİSTEM_DURUMU: AKTİF</span>
+            <span>GİRİŞ İÇİN [BOŞLUK] TUŞUNA BASIN VEYA AŞAĞI KAYDIRIN</span>
+        </div>
+    </div>
 
-    <section id="experience">
-        <h2 class="section-title animate-text">Deneyim & Eğitim</h2>
-        <div class="grid-container">
+    <div class="arch-grid-lines" aria-hidden="true">
+        <div class="grid-line grid-line-v1"></div>
+        <div class="grid-line grid-line-v2"></div>
+        <div class="grid-line grid-line-v3"></div>
+        <div class="grid-line grid-line-v4"></div>
+    </div>
+
+    <header class="arch-header" id="navbar">
+        <div class="header-inner">
+
+            <div class="header-left">
+                <a href="#home" class="arch-brand-title">FURKAN.CAKICI</a>
+            </div>
+
+            <nav class="header-center-nav desktop-menu" aria-label="Ana Menü">
+                <a href="#about" class="nav-item"><span class="item-idx">01</span>HAKKIMDA</a>
+                <a href="#projects" class="nav-item"><span class="item-idx">02</span>PROJELER</a>
+                <a href="#home" class="nav-monogram-box" title="Furkan Çakıcı">[ FÇ ]</a>
+                <a href="#experience" class="nav-item"><span class="item-idx">03</span>DENEYİM</a>
+                <a href="#contact" class="nav-item"><span class="item-idx">04</span>İLETİŞİM</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="header-lang-switch">
+                    <span class="lang-opt active">TR</span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-opt">EN</span>
+                </div>
+                <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Menüyü Aç/Kapat">
+                    <span class="trigger-box">
+                        <span class="trigger-line"></span>
+                        <span class="trigger-line"></span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="mobile-overlay-menu" id="mobileOverlayMenu" aria-hidden="true">
+        <div class="overlay-backdrop" id="overlayBackdrop"></div>
+        <div class="overlay-panel">
+            <div class="overlay-panel-header">
+                <span class="overlay-title">MENÜ // İNDEKS</span>
+                <button class="overlay-close" id="overlayClose" aria-label="Kapat"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <nav class="overlay-nav-list">
+                <a href="#home" class="overlay-link"><span class="link-num">00</span>BAŞLANGIÇ</a>
+                <a href="#about" class="overlay-link"><span class="link-num">01</span>HAKKIMDA // MANİFESTO</a>
+                <a href="#projects" class="overlay-link"><span class="link-num">02</span>GELİŞTİRİLEN PROJELER</a>
+                <a href="#experience" class="overlay-link"><span class="link-num">03</span>İŞ DENEYİMLERİ</a>
+                <a href="#skills" class="overlay-link"><span class="link-num">04</span>TEKNİK YETKİNLİKLER</a>
+                <a href="#education" class="overlay-link"><span class="link-num">05</span>AKADEMİK & ÖDÜLLER</a>
+                <a href="#contact" class="overlay-link"><span class="link-num">06</span>İLETİŞİM KANALLARI</a>
+            </nav>
+            <div class="overlay-footer">
+                <div class="overlay-socials">
+                    <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+                    <a href="https://www.linkedin.com/in/furkan-çakici" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LINKEDIN</a>
+                    <a href="mailto:info.furkancakici.tr@gmail.com"><i class="fa-solid fa-envelope"></i> E-POSTA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="arch-main" id="mainContainer">
+
+        <section class="arch-section dijoux-hero-section" id="home">
+
+            <div class="dijoux-announcement-wrap">
+                <div class="dijoux-announcement-pill">
+                    <span class="ann-badge">[ FÇ ]</span>
+                    <span class="ann-title">YENİ PROJELERE & FIRSATLARA AÇIK — BİLGİSAYAR MÜHENDİSİ</span>
+                    <a href="#contact" class="ann-cta">İLETİŞİM <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="dijoux-telemetry-strip">
+                <div class="d-tele-col">
+                    <span class="d-tele-head">FURKAN</span>
+                    <span class="d-tele-sub">ÇAKICI</span>
+                </div>
+                <div class="d-tele-col">
+                    <span class="d-tele-head">ESKİŞEHİR</span>
+                    <span class="d-tele-sub">TÜRKİYE [39.77°N • 30.52°E]</span>
+                </div>
+                <div class="d-tele-col">
+                    <span class="d-tele-head">BİLGİSAYAR MÜHENDİSİ</span>
+                    <span class="d-tele-sub">Yeni Mezun</span>
+                </div>
+                <div class="d-tele-col d-tele-time-col">
+                    <div class="time-header-line">
+                        <span class="d-tele-head">YEREL SAAT</span>
+                        <i class="fa-regular fa-star d-star-icon"></i>
+                    </div>
+                    <span class="d-tele-clock" id="heroLiveClock">17:54</span>
+                </div>
+            </div>
+
+            <div class="dijoux-hero-stage">
+                <canvas id="ditherSphereCanvas" class="dither-sphere-canvas"></canvas>
+
+                <div class="dijoux-stage-grid">
+
+                    <div class="stage-left-col">
+                        <div class="stage-status-kicker">
+                            <span class="kicker-pulse-dot"></span>
+                            <span class="kicker-text">[ 00 ] — İŞ BİRLİKLERİNE & FIRSATLARA AÇIK</span>
+                        </div>
+
+                        <h1 class="dijoux-monument-headline">
+                            <span class="h-word">YAZILIM</span>
+                            <span class="h-word">GELİŞTİRME &</span>
+                            <span class="h-word">MÜHENDİSLİK</span>
+                            <span class="h-word">DİSİPLİNİ</span>
+                        </h1>
+                    </div>
+
+                    <div class="stage-right-col">
+                        <div class="dijoux-floating-card">
+                            <p class="floating-lead-text">
+                                Amasya Üniversitesi Bilgisayar Mühendisliği mezunuyum. Güçlü algoritmik temeller, temiz kod prensipleri ve sistem bütünlüğü anlayışıyla ölçeklenebilir backend mimarileri ve yapay zeka sistemleri tasarlıyorum.
+                            </p>
+                            <div class="floating-actions-group">
+                                <a href="#projects" class="btn-dijoux-ghost">PROJELERİ GÖR</a>
+                                <a href="#contact" class="btn-dijoux-solid">İLETİŞİME GEÇ →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dijoux-bottom-monument">
+                    <div class="monument-banner-row">
+                        <span class="monument-giant-name">FURKAN</span>
+                        <div class="monument-vertical-tag-wrap">
+                            <span class="monument-vertical-tag">ÇAKICI</span>
+                        </div>
+                    </div>
+
+                    <div class="monument-sub-bar">
+                        <span class="sub-bar-left">BİLGİSAYAR MÜHENDİSİ & YAZILIM GELİŞTİRİCİ — 2026</span>
+                        <div class="sub-bar-right">
+                            <span class="sub-bar-badge">[ FÇ ]</span>
+                            <span class="sub-bar-label">PORTFOLYO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="arch-section" id="about">
+            <div class="arch-container">
+                
+                <div class="section-title-strip">
+                    <div class="strip-left">
+                        <span class="strip-num">01</span>
+                        <span class="strip-name">HAKKIMDA // PROFİL VE MÜHENDİSLİK VİZYONU</span>
+                    </div>
+                    <div class="strip-right">
+                        <span>BİLGİSAYAR MÜHENDİSİ // YENİ MEZUN</span>
+                    </div>
+                </div>
+
+                <div class="journey-bar">
+                    <div class="journey-item">
+                        <span class="j-label">YOLCULUK</span>
+                        <span class="j-title">LİSANS EĞİTİMİ → SEKTÖR</span>
+                    </div>
+                    <div class="journey-item">
+                        <span class="j-label">ÜNİVERSİTE</span>
+                        <span class="j-val">AMASYA ÜNİVERSİTESİ</span>
+                    </div>
+                    <div class="journey-arrow">→</div>
+                    <div class="journey-item">
+                        <span class="j-label">STAJ & SAHA</span>
+                        <span class="j-val">BİEN YAPI & İSTİKAMET DÖKÜM</span>
+                    </div>
+                    <div class="journey-arrow">→</div>
+                    <div class="journey-item j-status">
+                        <span class="j-label">GÜNCEL DURUM</span>
+                        <span class="j-val text-accent">TAM ZAMANLI ROLLERE AÇIK</span>
+                    </div>
+                </div>
+
+                <div class="about-editorial-grid">
+
+                    <div class="manifesto-col">
+                        <h2 class="editorial-heading">
+                            GÜÇLÜ ALGORİTMİK TEMEL, SÜREKLİ ÖĞRENME TUTKUSU VE GERÇEK DÜNYA PROJE PRATİĞİ.
+                        </h2>
+                        <div class="editorial-body">
+                            <p>
+                                Amasya Üniversitesi Bilgisayar Mühendisliği bölümünde edindiğim güçlü teorik altyapıyı, henüz lisans sürecimdeyken gerçekleştirdiğim kurumsal stajlar ve Ar-Ge projeleriyle somut mühendislik pratiklerine dönüştürdüm.
+                            </p>
+                            <p>
+                                Yazılım geliştirmeye yalnızca kod yazma pratiği olarak değil; veritabanı modellemesinden arka plan servislerine, sistem performansından altyapı güvenliğine kadar bütüncül bir problem çözme disiplini olarak yaklaşıyorum. Backend mimarileri, modern C# / .NET teknolojileri ve Unreal Engine 5 tabanlı yapay zeka sistemleri üzerine odaklanıyorum.
+                            </p>
+                            <p>
+                                Yeni mezun bir bilgisayar mühendisi olarak; temiz kod (Clean Code) standartlarına özen gösteren, analitik düşünme refleksine sahip, yeni teknolojilere hızla adapte olabilen ve takım çalışmasında katma değer üreten bir yaklaşımla profesyonel yazılım ekiplerinde aktif sorumluluk almaya hazırım.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pillars-col">
+
+                        <div class="pillar-box">
+                            <div class="pillar-top">
+                                <span class="p-num">#01 // BACKEND GELİŞTİRME</span>
+                                <span class="p-icon"><i class="fa-solid fa-server"></i></span>
+                            </div>
+                            <h3 class="p-title">Modern Backend & API Sistemleri</h3>
+                            <p class="p-desc">
+                                C# ve ASP.NET Core ile ölçeklenebilir RESTful servisler, Entity Framework Core ile ilişkisel veritabanı yönetimi ve temiz kod mimarisi.
+                            </p>
+                            <div class="p-tags">
+                                <span>C#</span>
+                                <span>ASP.NET Core</span>
+                                <span>EF Core</span>
+                                <span>MSSQL</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+
+                        <div class="pillar-box">
+                            <div class="pillar-top">
+                                <span class="p-num">#02 // OYUN YAZILIMI & YAPAY ZEKA</span>
+                                <span class="p-icon"><i class="fa-solid fa-gamepad"></i></span>
+                            </div>
+                            <h3 class="p-title">Oyun Geliştirme & NPC Yapay Zekası</h3>
+                            <p class="p-desc">
+                                Unreal Engine 5 ortamında C++ ve Blueprints kullanarak karakter durum makineleri, savaş dinamikleri ve matematiksel Boss AI davranış modelleri.
+                            </p>
+                            <div class="p-tags">
+                                <span>Unreal Engine 5</span>
+                                <span>C++</span>
+                                <span>Blueprints</span>
+                                <span>NPC AI</span>
+                                <span>Durum Makineleri</span>
+                            </div>
+                        </div>
+
+                        <div class="pillar-box">
+                            <div class="pillar-top">
+                                <span class="p-num">#03 // KURUMSAL BT & ALTYAPI PRATİĞİ</span>
+                                <span class="p-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                            </div>
+                            <h3 class="p-title">Kurumsal Ağ & Sistem Altyapısı</h3>
+                            <p class="p-desc">
+                                Kurumsal ağ topolojisi, switch konfigürasyonu, FortiGate güvenlik duvarı kuralları ve Windows Server yönetimi saha deneyimi.
+                            </p>
+                            <div class="p-tags">
+                                <span>Ağ Güvenliği</span>
+                                <span>FortiGate</span>
+                                <span>Windows Server</span>
+                                <span>Switch Topolojisi</span>
+                            </div>
+                        </div>
+
+                        <div class="pillar-box">
+                            <div class="pillar-top">
+                                <span class="p-num">#04 // UYGULAMALI YAPAY ZEKA & OTOMASYON</span>
+                                <span class="p-icon"><i class="fa-solid fa-brain"></i></span>
+                            </div>
+                            <h3 class="p-title">Yapay Zeka Entegrasyonu & Otomasyon</h3>
+                            <p class="p-desc">
+                                Büyük dil modelleri (LLM API) entegrasyonu, kural tabanlı metin analizi ve rutin kurumsal iş akışlarını hızlandıran arka plan otomasyonları.
+                            </p>
+                            <div class="p-tags">
+                                <span>LLM API</span>
+                                <span>Veri Analizi</span>
+                                <span>İş Akışı Otomasyonu</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="arch-section" id="projects">
+            <div class="arch-container">
+                
+                <div class="section-title-strip">
+                    <div class="strip-left">
+                        <span class="strip-num">02</span>
+                        <span class="strip-name">GELİŞTİRİLEN PROJELER & ÇALIŞMALAR</span>
+                    </div>
+                    <div class="strip-right">
+                        <span>5 SEÇKİN PROJE</span>
+                    </div>
+                </div>
+
+                <div class="arch-filter-bar">
+                    <button class="filter-tab-btn active" data-filter="all">[ TÜM_PROJELER ]</button>
+                    <button class="filter-tab-btn" data-filter="game-ai">[ OYUN_AI & UE5 ]</button>
+                    <button class="filter-tab-btn" data-filter="backend">[ BACKEND & WEB ]</button>
+                    <button class="filter-tab-btn" data-filter="cloud-sync">[ BULUT & MOBİL ]</button>
+                    <button class="filter-tab-btn" data-filter="algorithms">[ ALGORİTMA & CI/CD ]</button>
+                </div>
+
+                <div class="arch-projects-list">
+
+                    <article class="project-arch-item flagship" data-cat="game-ai">
+                        <div class="project-card-header-bar">
+                            <div class="header-left-meta">
+                                <span class="p-order-num">#01</span>
+                                <span class="p-tag-accent"><i class="fa-solid fa-award"></i> TÜBİTAK 2209-A PROJE DESTEĞİ</span>
+                            </div>
+                            <div class="header-right-meta">
+                                <span class="p-date-meta">14.04.2025 – 14.04.2026</span>
+                                <span class="p-domain-meta">// OYUN YAPAY ZEKASI & UE5</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="p-main-title">Echo of Fury: Souls-like Boss NPC AI</h3>
+                            <p class="p-lead-description">
+                                İki kişilik bir ekiple 3 aylık bir Ar-Ge sürecinde tasarlanan, TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı tarafından resmi olarak desteklenen yeni nesil aksiyon oyunu prototipi.
+                            </p>
+
+                            <div class="project-specs-grid">
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 01 // YAPAY ZEKA ALGORİTMASI ]</div>
+                                    <p class="spec-block-text">Oyuncunun Öklid mesafesi ve açısal konumunu gerçek zamanlı hesaplayarak 9 farklı dinamik saldırı deseni arasından karar veren kural tabanlı Boss NPC davranış ağacı mimarisi.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 02 // NİAGARA GÖRSEL EFEKTLERİ ]</div>
+                                    <p class="spec-block-text">Boss savaşları için Niagara Effect System kullanılarak geliştirilen özel alan etkili (AOE) karanlık büyü saldırıları ve sinematik görsel efektler.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 03 // MODÜLER UE5 MİMARİSİ ]</div>
+                                    <p class="spec-block-text">Unreal Engine 5 (Blueprint ve C++) hibrit mimarisi, akıcı karakter hareketi, dövüş mekanikleri, vuruş tepkileri ve gelişmiş animasyon montajları entegrasyonu.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech-pills">
+                                <span>Unreal Engine 5</span>
+                                <span>C++</span>
+                                <span>Blueprints</span>
+                                <span>Niagara VFX</span>
+                                <span>State Machines</span>
+                                <span>Boss AI Perception</span>
+                                <span>Motion Warping</span>
+                            </div>
+
+                            <div class="project-bottom-actions">
+                                <button class="btn-arch btn-accent open-project-modal" data-project="echo-of-fury">
+                                    DETAYLI İNCELE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer" class="btn-arch">
+                                    GITHUB REPOSU <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-arch-item" data-cat="backend">
+                        <div class="project-card-header-bar">
+                            <div class="header-left-meta">
+                                <span class="p-order-num">#02</span>
+                                <span class="p-tag-accent">KURUMSAL YAPAY ZEKA</span>
+                            </div>
+                            <div class="header-right-meta">
+                                <span class="p-date-meta">2024 // İSTİKAMET DÖKÜM A.Ş.</span>
+                                <span class="p-domain-meta">// DOĞAL DİL İŞLEME & LLM</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="p-main-title">BT Destek Karar ve E-posta Otomasyon Paneli</h3>
+                            <p class="p-lead-description">
+                                İstikamet Döküm A.Ş. bünyesinde kurumsal BT destek süreçlerini hızlandırmak amacıyla geliştirilen; gelen arıza e-postalarını analiz eden, sistem çözüm önerileri oluşturan ve son kullanıcı için otomatik yanıt taslakları hazırlayan yapay zeka sistemi.
+                            </p>
+
+                            <div class="project-specs-grid">
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 01 // GOOGLE GEMINI & NLP ]</div>
+                                    <p class="spec-block-text">Google Gemini LLM REST API entegrasyonu ve kural tabanlı yerel NLP motoru ile arıza biletlerini anlık sınıflandırma ve semantik analiz.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 02 // E-POSTA ENTEGRASYONU ]</div>
+                                    <p class="spec-block-text">MailKit ve MimeKit ile Gmail IMAP üzerinden arızaları otomatik okuma ve kullanıcılara teknik personelin onaylayabileceği hazır yanıt taslakları sunma.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 03 // KURUMSAL REST SERVİSLERİ ]</div>
+                                    <p class="spec-block-text">ASP.NET Core, C# ve güvenli RESTful servis katmanları ile kurumsal altyapıya sorunsuz entegrasyon.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech-pills">
+                                <span>ASP.NET Core</span>
+                                <span>C#</span>
+                                <span>Google Gemini API</span>
+                                <span>MailKit / MimeKit</span>
+                                <span>REST API</span>
+                                <span>Doğal Dil İşleme (NLP)</span>
+                            </div>
+
+                            <div class="project-bottom-actions">
+                                <button class="btn-arch btn-accent open-project-modal" data-project="bt-destek">
+                                    DETAYLI İNCELE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer" class="btn-arch">
+                                    GITHUB REPOSU <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-arch-item" data-cat="cloud-sync">
+                        <div class="project-card-header-bar">
+                            <div class="header-left-meta">
+                                <span class="p-order-num">#03</span>
+                                <span class="p-tag-accent">GERÇEK ZAMANLI SENKRONİZASYON</span>
+                            </div>
+                            <div class="header-right-meta">
+                                <span class="p-date-meta">2024 // ENDÜSTRİYEL UYGULAMA</span>
+                                <span class="p-domain-meta">// WEB & ANDROİD ENVANTER</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="p-main-title">Uçtan Uca Çok Platformlu Stok Takip Sistemi</h3>
+                            <p class="p-lead-description">
+                                Fabrika ortamında yönetim ofisinin web tarayıcısından, saha personelinin ise Android el terminallerinden eşzamanlı ve sıfır gecikmeyle kullanabildiği bulut tabanlı kurumsal envanter kontrol platformu.
+                            </p>
+
+                            <div class="project-specs-grid">
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 01 // ÇOKLU PLATFORM ]</div>
+                                    <p class="spec-block-text">Web tarafında bileşen tabanlı React.js yönetim arayüzü; Android mobil tarafta ise performans odaklı Kotlin ile geliştirilen bağımsız istemciler.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 02 // BULUT VERİ SENKRONU ]</div>
+                                    <p class="spec-block-text">Firebase Firestore NoSQL bulut altyapısı ile anlık veri akışı; sahada yapılan stok hareketi anında ofis paneline yansır.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 03 // ENVANTER DENETİMİ ]</div>
+                                    <p class="spec-block-text">Kritik stok seviye uyarıları, kategori bazlı envanter analizi ve malzeme sarfiyat takibi.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech-pills">
+                                <span>React.js</span>
+                                <span>Kotlin</span>
+                                <span>Firebase Firestore</span>
+                                <span>NoSQL</span>
+                                <span>Android SDK</span>
+                                <span>Bulut Senkronizasyonu</span>
+                            </div>
+
+                            <div class="project-bottom-actions">
+                                <button class="btn-arch btn-accent open-project-modal" data-project="stok-takip">
+                                    DETAYLI İNCELE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer" class="btn-arch">
+                                    GITHUB REPOSU <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-arch-item" data-cat="backend">
+                        <div class="project-card-header-bar">
+                            <div class="header-left-meta">
+                                <span class="p-order-num">#04</span>
+                                <span class="p-tag-accent">KURUMSAL WEB SİSTEMİ</span>
+                            </div>
+                            <div class="header-right-meta">
+                                <span class="p-date-meta">2024 // İSTİKAMET DÖKÜM A.Ş.</span>
+                                <span class="p-domain-meta">// ARKA PLAN SERVİSLERİ & SMTP</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="p-main-title">Kurumsal Lisans Takip Otomasyonu</h3>
+                            <p class="p-lead-description">
+                                Müşteri ve kurum içi yazılım/donanım lisanslarının sürelerini takip eden, dinamik takvim arayüzü sunan ve süresi yaklaşan lisanslar için sunucu arkasından otomatik e-posta uyarıları gönderen kurumsal web sistemi.
+                            </p>
+
+                            <div class="project-specs-grid">
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 01 // VERİTABANI & ORM ]</div>
+                                    <p class="spec-block-text">ASP.NET Core MVC ve Entity Framework Core ile MSSQL üzerinde optimize edilmiş ilişkisel şema ve CRUD süreçleri.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 02 // ARKA PLAN SERVİSİ ]</div>
+                                    <p class="spec-block-text">Sunucu arkasında periyodik çalışan Background Service ve SMTP entegrasyonu ile yaklaşan vadeler için otomatik hatırlatma bildirimleri.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 03 // DİNAMİK TAKVİM ]</div>
+                                    <p class="spec-block-text">Tüm lisans döngülerinin görsel olarak renklendirilmiş durumlarla anlık takip edilebildiği interaktif takvim arayüzü.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech-pills">
+                                <span>ASP.NET Core MVC</span>
+                                <span>Entity Framework Core</span>
+                                <span>MSSQL</span>
+                                <span>Background Services</span>
+                                <span>SMTP Entegrasyonu</span>
+                            </div>
+
+                            <div class="project-bottom-actions">
+                                <button class="btn-arch btn-accent open-project-modal" data-project="lisans-otomasyon">
+                                    DETAYLI İNCELE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer" class="btn-arch">
+                                    GITHUB REPOSU <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-arch-item" data-cat="algorithms">
+                        <div class="project-card-header-bar">
+                            <div class="header-left-meta">
+                                <span class="p-order-num">#05</span>
+                                <span class="p-tag-accent">ALGORİTMALAR & CI/CD</span>
+                            </div>
+                            <div class="header-right-meta">
+                                <span class="p-date-meta">2024 - 2026 // AÇIK KAYNAK</span>
+                                <span class="p-domain-meta">// SÜREKLİ ENTEGRASYON</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="p-main-title">Algoritma & GitHub Actions CI/CD</h3>
+                            <p class="p-lead-description">
+                                C++ ile LeetCode algoritma optimizasyonları, veri yapıları pratikleri ve GitHub Actions boru hatları ile metriklerin otomatik analiz edilerek profil panosuna dinamik yansıtılması.
+                            </p>
+
+                            <div class="project-specs-grid">
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 01 // PERFORMANS ANALİZİ ]</div>
+                                    <p class="spec-block-text">C++ ile ağaçlar, grafikler ve dinamik programlama algoritmalarında bellek ve zaman karmaşıklığı optimizasyonları.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 02 // GITHUB ACTIONS ]</div>
+                                    <p class="spec-block-text">Sürekli entegrasyon (CI/CD) boru hatları ile kod alıştırmalarının otomatik doğrulanması ve profil metriklerinin güncellenmesi.</p>
+                                </div>
+                                <div class="spec-block">
+                                    <div class="spec-block-title">[ 03 // PYTHON & SQL ]</div>
+                                    <p class="spec-block-text">Veri çekme, istatistik derleme ve profil analitik otomasyon betikleri.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-tech-pills">
+                                <span>C++</span>
+                                <span>Python</span>
+                                <span>GitHub Actions</span>
+                                <span>CI/CD</span>
+                                <span>LeetCode</span>
+                                <span>Veri Yapıları</span>
+                            </div>
+
+                            <div class="project-bottom-actions">
+                                <button class="btn-arch btn-accent open-project-modal" data-project="algoritma">
+                                    DETAYLI İNCELE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer" class="btn-arch">
+                                    GITHUB REPOSU <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="arch-section" id="experience">
+            <div class="arch-container">
+                
+                <div class="section-title-strip">
+                    <div class="strip-left">
+                        <span class="strip-num">03</span>
+                        <span class="strip-name">PROFESYONEL İŞ DENEYİMLERİ // KARİYER YOLU</span>
+                    </div>
+                    <div class="strip-right">
+                        <span>KURUMSAL STAJLAR & SAHA ROLLERİ</span>
+                    </div>
+                </div>
+
+                <div class="experience-arch-list">
+
+                    <div class="exp-arch-card">
+                        <div class="exp-meta-side">
+                            <span class="exp-order">#01</span>
+                            <span class="exp-dates">06.07.2026 – 04.08.2026</span>
+                            <span class="exp-tag">KURUMSAL BT & AĞ GÜVENLİĞİ</span>
+                        </div>
+
+                        <div class="exp-main-side">
+                            <div class="exp-headline">
+                                <h3 class="exp-role-title">BT ve Yazılım Geliştirme Stajyeri</h3>
+                                <div class="exp-company-title text-accent">BİEN YAPI ÜRÜNLERİ</div>
+                            </div>
+
+                            <p class="exp-lead-summary">
+                                Büyük ölçekli endüstriyel üretim tesisinde kurumsal siber güvenlik altyapısı, ağ topolojisi, sunucu kurulumları ve yardım masası süreçlerinde kritik teknik sorumluluklar üstlendi.
+                            </p>
+
+                            <div class="exp-responsibilities">
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span>Kurumsal ağ altyapısındaki <strong>FortiGate güvenlik duvarında</strong> NAT kurallarını, SSL denetimini (inspection) ve web filtreleme politikalarını yapılandırdı.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span>Uygulama kontrol profilleri oluşturdu ve sistem güvenlik günlüklerini (firewall logs) düzenli olarak inceledi.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span><strong>Zyxel çekirdek ve uç anahtarlarla (switches)</strong> fabrika ağ topolojisini haritalandırdı ve <strong>VFL fiber optik testi</strong> ile yapısal kablolama işlemlerini bizzat yürüttü.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span>Server Manager üzerinden <strong>Windows Server</strong> kurulumu, statik IP ve ana bilgisayar adı (hostname/DNS) yapılandırmalarını başarıyla gerçekleştirdi.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span>Yardım masası operasyonları sırasında iş istasyonu kurulumu, <strong>MDM uç nokta kısıtlamaları</strong>, ağ güvenlik açığı tespiti ve IP kamera yapılandırma sorunlarını çözüme kavuşturdu.</span>
+                                </div>
+                            </div>
+
+                            <div class="exp-pill-stack">
+                                <span>FortiGate Firewall</span>
+                                <span>NAT & SSL Inspection</span>
+                                <span>Zyxel Switching</span>
+                                <span>VFL Fiber Testi</span>
+                                <span>Windows Server</span>
+                                <span>MDM</span>
+                                <span>Yardım Masası</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-arch-card">
+                        <div class="exp-meta-side">
+                            <span class="exp-order">#02</span>
+                            <span class="exp-dates">01.07.2024 – 23.08.2024</span>
+                            <span class="exp-tag">YAZILIM MÜHENDİSLİĞİ</span>
+                        </div>
+
+                        <div class="exp-main-side">
+                            <div class="exp-headline">
+                                <h3 class="exp-role-title">Yazılım Geliştirme Stajyeri</h3>
+                                <div class="exp-company-title text-accent">İSTİKAMET DÖKÜM A.Ş.</div>
+                            </div>
+
+                            <p class="exp-lead-summary">
+                                Endüstriyel döküm firmasının kurumsal süreçlerini dijitalleştirmek üzere ASP.NET Core, FastAPI bulut mikroservisleri, LLM karar motorları ve mobil-web entegrasyonlu yazılımlar geliştirdi.
+                            </p>
+
+                            <div class="exp-responsibilities">
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span><strong>ASP.NET Core MVC</strong> ve <strong>Entity Framework Core</strong> kullanarak MSSQL tabanlı bir lisans takip otomasyonu geliştirdi.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span>Yaklaşan lisans sürelerinin dolması için <strong>Background Service</strong> ve <strong>SMTP entegrasyonu</strong> ile otomatik e-posta bildirim sistemi kurdu.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span><strong>Render</strong> platformunda <strong>FastAPI ve PostgreSQL/SQLite</strong> tabanlı bulut API servislerini devreye aldı ve <strong>Streamlit</strong> kullanarak yönetici paneli tasarladı.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span><strong>Google Gemini LLM API'sini</strong> kural tabanlı yerel bir NLP motoruyla birleştiren, Gmail IMAP entegrasyonunu <strong>MailKit/MimeKit</strong> ile kuran hibrit bir BT Destek Karar Otomasyonu geliştirdi.</span>
+                                </div>
+                                <div class="resp-line">
+                                    <span class="resp-marker">→</span>
+                                    <span><strong>React.js</strong> ve <strong>Kotlin</strong> kullanarak Firebase Firestore üzerinde gerçek zamanlı ve eşzamanlı çalışan uçtan uca bir Stok Takip Sistemi geliştirdi.</span>
+                                </div>
+                            </div>
+
+                            <div class="exp-pill-stack">
+                                <span>ASP.NET Core MVC</span>
+                                <span>Entity Framework Core</span>
+                                <span>FastAPI</span>
+                                <span>Google Gemini LLM</span>
+                                <span>MSSQL</span>
+                                <span>React.js</span>
+                                <span>Kotlin</span>
+                                <span>Firebase Firestore</span>
+                                <span>Streamlit</span>
+                                <span>MailKit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="arch-section" id="skills">
+            <div class="arch-container">
+                
+                <div class="section-title-strip">
+                    <div class="strip-left">
+                        <span class="strip-num">04</span>
+                        <span class="strip-name">TEKNİK YETKİNLİKLER // TEKNOLOJİ YIĞINI</span>
+                    </div>
+                    <div class="strip-right">
+                        <span>UZMANLIK ALANLARI</span>
+                    </div>
+                </div>
+
+                <div class="stack-matrix-grid">
+
+                    <div class="stack-cat-box">
+                        <div class="cat-head">
+                            <span class="cat-num">01</span>
+                            <h4 class="cat-title">PROGRAMLAMA DİLLERİ</h4>
+                        </div>
+                        <ul class="cat-list">
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">C# (.NET Core)</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">C++ & C</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Python</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Kotlin</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">SQL (T-SQL)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-cat-box">
+                        <div class="cat-head">
+                            <span class="cat-num">02</span>
+                            <h4 class="cat-title">WEB & BACKEND SİSTEMLERİ</h4>
+                        </div>
+                        <ul class="cat-list">
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">ASP.NET Core MVC</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Entity Framework Core</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">FastAPI & Python REST</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Streamlit Panelleri</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">React.js</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">HTML5 & CSS3</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-cat-box">
+                        <div class="cat-head">
+                            <span class="cat-num">03</span>
+                            <h4 class="cat-title">VERİTABANLARI & BULUT</h4>
+                        </div>
+                        <ul class="cat-list">
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">MSSQL & SQL Server</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Firebase Firestore (NoSQL)</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">PostgreSQL & SQLite</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Render Bulut Platformu</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-cat-box">
+                        <div class="cat-head">
+                            <span class="cat-num">04</span>
+                            <h4 class="cat-title">OYUN MOTORLARI & YAPAY ZEKA</h4>
+                        </div>
+                        <ul class="cat-list">
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Unreal Engine 5 (UE5)</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Boss NPC Yapay Zekası</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Niagara Effect System</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Google Gemini REST API</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Unity</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-cat-box">
+                        <div class="cat-head">
+                            <span class="cat-num">05</span>
+                            <h4 class="cat-title">KURUMSAL AĞ & ALTYAPI</h4>
+                        </div>
+                        <ul class="cat-list">
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">FortiGate Güvenlik Duvarı</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Windows Server / Manager</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Zyxel Switch & Ağ Topolojisi</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">VFL Fiber Optik Testi</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">MDM & Yardım Masası</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-cat-box">
+                        <div class="cat-head">
+                            <span class="cat-num">06</span>
+                            <h4 class="cat-title">ARAÇLAR & PROTOKOLLER</h4>
+                        </div>
+                        <ul class="cat-list">
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Git & GitHub</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">GitHub Actions (CI/CD)</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">MailKit & SMTP / IMAP</span>
+                            </li>
+                            <li>
+                                <span class="item-bullet">/</span>
+                                <span class="item-name">Docker Temelleri</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="arch-section" id="education">
+            <div class="arch-container">
+                
+                <div class="section-title-strip">
+                    <div class="strip-left">
+                        <span class="strip-num">05</span>
+                        <span class="strip-name">AKADEMİK GEÇMİŞ // BAŞARILAR & SERTİFİKALAR</span>
+                    </div>
+                    <div class="strip-right">
+                        <span>EĞİTİM VE KURUMSAL LİDERLİKLER</span>
+                    </div>
+                </div>
+
+                <div class="academic-editorial-grid">
+
+                    <div class="acad-left-col">
+
+                        <div class="arch-spec-card">
+                            <div class="spec-card-header">
+                                <span class="spec-header-tag">[ LİSANS DERECESİ ]</span>
+                                <span class="spec-date">YENİ MEZUN // BİLGİSAYAR MÜHENDİSİ</span>
+                            </div>
+                            <h3 class="acad-degree-title">BİLGİSAYAR MÜHENDİSLİĞİ</h3>
+                            <div class="acad-school text-accent">Amasya Üniversitesi – Mühendislik Fakültesi</div>
+                            <div class="acad-gpa-badge">
+                                <span>NOT ORTALAMASI: <strong>2.89 / 4.00</strong></span>
+                            </div>
+                            <p class="acad-desc">
+                                Algoritmik analiz, veri yapıları, nesne yönelimli programlama, işletim sistemleri, veritabanı yönetim sistemleri ve bilgisayar ağ protokolleri üzerine kapsamlı mühendislik eğitimi.
+                            </p>
+                        </div>
+
+                        <div class="arch-spec-card">
+                            <div class="spec-card-header">
+                                <span class="spec-header-tag">[ TOPLULUK & LİDERLİK ROLLERİ ]</span>
+                                <span class="spec-date">AKTİF GÖREVLER</span>
+                            </div>
+                            <ul class="lead-items">
+                                <li>
+                                    <div class="lead-title">Google Developer Student Clubs (GDSC) Amasya</div>
+                                    <div class="lead-role-tag text-accent">Grafik Tasarım Yöneticisi & Başkan Yardımcısı (2023 - 2024)</div>
+                                    <p class="lead-text">Teknoloji konferansları, kodlama atölyeleri organizasyonu ve topluluk görsel kimliği yönetimi.</p>
+                                </li>
+                                <li>
+                                    <div class="lead-title">Yeşilay Gençlik Kulübü</div>
+                                    <div class="lead-role-tag text-accent">Yönetim Kurulu Üyesi / Gönüllü</div>
+                                    <p class="lead-text">Teknoloji Bağımlılığı ile mücadele biriminde farkındalık projeleri ve gençlik çalışmaları.</p>
+                                </li>
+                                <li>
+                                    <div class="lead-title">IEEE Amasya Öğrenci Kolu</div>
+                                    <div class="lead-role-tag text-accent">Aktif Üye</div>
+                                    <p class="lead-text">Mühendislik seminerleri ve teknik araştırma geliştirme projelerine aktif katılım.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="arch-spec-card">
+                            <div class="spec-card-header">
+                                <span class="spec-header-tag">[ YABANCI DİL YETKİNLİĞİ ]</span>
+                            </div>
+                            <div class="lang-row">
+                                <span class="l-name">TÜRKÇE</span>
+                                <span class="l-level text-accent">ANADİL</span>
+                            </div>
+                            <div class="lang-row">
+                                <span class="l-name">İNGİLİZCE</span>
+                                <span class="l-level">BAŞLANGIÇ // TEKNİK DOKÜMANTASYON OKUMA</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="acad-right-col">
+
+                        <div class="tubitak-award-monument">
+                            <div class="award-header-row">
+                                <span class="award-badge-icon"><i class="fa-solid fa-award"></i></span>
+                                <div>
+                                    <span class="award-kicker">TÜBİTAK 2209-A PROJE DESTEĞİ</span>
+                                    <h4 class="award-title">Echo of Fury: Souls-like Boss NPC AI</h4>
+                                    <div class="award-period">14.04.2025 – 14.04.2026</div>
+                                </div>
+                            </div>
+                            <p class="award-desc">
+                                Unreal Engine 5 Blueprint ve C++ kullanılarak 9 dinamik saldırı desenine sahip kural tabanlı bir Boss NPC yapay zekası geliştirdi. Proje, <strong>T.C. TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı</strong> tarafından resmi olarak desteklenmeye hak kazanmıştır.
+                            </p>
+                        </div>
+
+                        <div class="certs-arch-list">
+                            <div class="cert-item-box">
+                                <div class="cert-box-head">
+                                    <span class="cert-provider google">GOOGLE</span>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                                <h5 class="cert-title">Google AI Essentials</h5>
+                                <p class="cert-summary">Yapay zeka araçlarının iş akışlarına entegrasyonu, prompt mühendisliği ve sorumlu yapay zeka pratikleri.</p>
+                            </div>
+
+                            <div class="cert-item-box">
+                                <div class="cert-box-head">
+                                    <span class="cert-provider gdsc">GDSC</span>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                                <h5 class="cert-title">GDSC Generative AI Learning Path</h5>
+                                <p class="cert-summary">Büyük Dil Modelleri (LLM) temelleri, üretimsel yapay zeka mimarileri ve makine öğrenimi ilkeleri.</p>
+                            </div>
+
+                            <div class="cert-item-box">
+                                <div class="cert-box-head">
+                                    <span class="cert-provider btk">BTK AKADEMİ</span>
+                                    <span class="cert-year">2023 - 2024</span>
+                                </div>
+                                <h5 class="cert-title">BTK Akademi Geliştirici Programı</h5>
+                                <p class="cert-summary">C#, C++, C, Python, HTML5 ve Unity oyun geliştirme müfredatları resmi başarı belgeleri.</p>
+                            </div>
+
+                            <div class="cert-item-box">
+                                <div class="cert-box-head">
+                                    <span class="cert-provider aibiz">AI BUSINESS SCHOOL</span>
+                                    <span class="cert-year">2023</span>
+                                </div>
+                                <h5 class="cert-title">AI Business School</h5>
+                                <p class="cert-summary">First Step to AI ve Introduction to Python uzmanlık sertifikasyonları.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="arch-section" id="contact">
+            <div class="arch-container">
+                
+                <div class="section-title-strip">
+                    <div class="strip-left">
+                        <span class="strip-num">06</span>
+                        <span class="strip-name">İLETİŞİM // DOĞRUDAN KANALLAR</span>
+                    </div>
+                    <div class="strip-right">
+                        <span>BİR İLETİŞİM BAŞLATIN</span>
+                    </div>
+                </div>
+
+                <div class="contact-editorial-grid">
+
+                    <div class="contact-channels-col">
+                        <h2 class="contact-big-callout">
+                            BİR PROJENİZ VEYA İŞ BİRLİĞİ FİKRİNİZ Mİ VAR?
+                        </h2>
+                        <p class="contact-sublead">
+                            Yeni mezun bir Bilgisayar Mühendisi olarak; tam zamanlı, hibrit veya uzaktan yazılım mühendisliği rolleri, backend ve oyun geliştirme projeleri için benimle doğrudan iletişime geçebilirsiniz.
+                        </p>
+
+                        <div class="contact-spec-rows">
+
+                            <div class="channel-row">
+                                <div class="ch-info">
+                                    <span class="ch-label">E-POSTA ADRESİ</span>
+                                    <a href="mailto:info.furkancakici.tr@gmail.com" class="ch-value">info.furkancakici.tr@gmail.com</a>
+                                </div>
+                                <button class="btn-copy-channel" data-copy="info.furkancakici.tr@gmail.com" title="Kopyala">
+                                    [ KOPYALA ]
+                                </button>
+                            </div>
+
+                            <div class="channel-row">
+                                <div class="ch-info">
+                                    <span class="ch-label">TEMEL KONUM</span>
+                                    <span class="ch-value">ESKİŞEHİR, TÜRKİYE [GMT+3]</span>
+                                </div>
+                                <span class="ch-tag">MERKEZ</span>
+                            </div>
+
+                            <div class="channel-links-grid">
+                                <a href="https://www.linkedin.com/in/furkan-çakici" target="_blank" rel="noopener noreferrer" class="social-arch-link">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <span>LINKEDIN // IN/FURKAN-ÇAKICI</span>
+                                </a>
+                                <a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer" class="social-arch-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GITHUB // FURKAN-CAKICI</span>
+                                </a>
+                                <a href="https://portfoliofurkancakici.site/" target="_blank" rel="noopener noreferrer" class="social-arch-link">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>PORTFOLIOFURKANCAKICI.SITE</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="contact-terminal-col">
+                        <div class="arch-terminal-frame">
+                            <div class="term-frame-bar">
+                                <div class="term-traffic-lights">
+                                    <span class="t-dot red"></span>
+                                    <span class="t-dot yellow"></span>
+                                    <span class="t-dot green"></span>
+                                </div>
+                                <span class="term-frame-title">mesaj_gonder.sh — furkan@sistem</span>
+                            </div>
+
+                            <form class="arch-form" id="contactForm">
+                                <div class="form-grid-2">
+                                    <div class="form-field">
+                                        <label for="formName">[ AD_SOYAD_VEYA_KURUM ] *</label>
+                                        <input type="text" id="formName" name="name" required autocomplete="name">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="formEmail">[ EPOSTA_ADRESİ ] *</label>
+                                        <input type="email" id="formEmail" name="email" required autocomplete="email">
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="formSubject">[ KONU / BAŞLIK ] *</label>
+                                    <input type="text" id="formSubject" name="subject" required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="formMessage">[ MESAJINIZ ] *</label>
+                                    <textarea id="formMessage" name="message" rows="5" required></textarea>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-arch btn-accent btn-block" id="formSubmitBtn">
+                                        MESAJI İLET [GÖNDER] <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                    <div class="form-status-msg" id="formStatus" aria-live="polite"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="arch-footer">
+        <div class="arch-container">
             
-            <div class="card reveal">
-                <div class="card-header">
-                    <div class="card-title">Bilgi İşlem (IT) Stajyeri</div>
-                    <div class="card-date">Temmuz 2026 - Mevcut</div>
+            <div class="footer-top-row">
+                <div class="f-col">
+                    <span class="f-sub">[ MİMARİ VİZYON ]</span>
+                    <p class="f-lead">Yüksek performanslı yazılım mühendisliği, ölçeklenebilir altyapılar ve interaktif oyun yapay zekası.</p>
                 </div>
-                <div class="card-subtitle">BİEN A.Ş.</div>
-                <ul class="card-list">
-                    <li>FastAPI tabanlı Backend servislerini Render platformu üzerinde canlıya alarak projenin bulut mimari entegrasyonunu sağladı.</li>
-                    <li>Streamlit tabanlı bir arayüz geliştirerek sistem verilerinin web üzerinden yönetilebilmesini sağladı.</li>
-                    <li>SQLite veritabanı yapısını sunucu ortamına entegre ederek CRUD operasyonlarını optimize etti.</li>
-                    <li>Fiber optik hat testleri (VFL) ve IP tabanlı kamera ağ yönetimi gibi fiziksel ağ altyapısı görevlerini üstlendi.</li>
-                </ul>
-            </div>
-
-            <div class="card reveal">
-                <div class="card-header">
-                    <div class="card-title">Bilgi İşlem (IT) Stajyeri</div>
-                    <div class="card-date">Temmuz 2024 - Ağustos 2024</div>
+                <div class="f-col">
+                    <span class="f-sub">[ GEZİNTİ ]</span>
+                    <ul class="f-links">
+                        <li><a href="#about">Hakkımda</a></li>
+                        <li><a href="#projects">Projeler</a></li>
+                        <li><a href="#experience">Deneyim</a></li>
+                        <li><a href="#skills">Yetenekler</a></li>
+                        <li><a href="#education">Akademik</a></li>
+                    </ul>
                 </div>
-                <div class="card-subtitle">İSTİKAMET DÖKÜM A.Ş.</div>
-                <ul class="card-list">
-                    <li>Döküm sektöründe yazılım ve sistem süreçleri hakkında uygulama deneyimi kazandı.</li>
-                </ul>
-            </div>
-
-            <div class="card reveal">
-                <div class="card-header">
-                    <div class="card-title">Amasya Üniversitesi</div>
-                    <div class="card-date">2021 - 2025</div>
+                <div class="f-col">
+                    <span class="f-sub">[ BAĞLANTILAR ]</span>
+                    <ul class="f-links">
+                        <li><a href="https://github.com/furkan-cakici" target="_blank" rel="noopener noreferrer">GitHub Profilim</a></li>
+                        <li><a href="https://www.linkedin.com/in/furkan-çakici" target="_blank" rel="noopener noreferrer">LinkedIn Profilim</a></li>
+                        <li><a href="mailto:info.furkancakici.tr@gmail.com">E-posta Gönder</a></li>
+                    </ul>
                 </div>
-                <div class="card-subtitle">Bilgisayar Mühendisliği (Lisans)</div>
-                <ul class="card-list">
-                    <li><strong>Google DSC Amasya:</strong> Grafik Tasarım Yöneticisi & Başkan Yardımcısı (Eylül 2023 - Eylül 2024)</li>
-                    <li><strong>Yeşilay:</strong> Teknoloji Bağımlılığı ile mücadele biriminde yönetim kurulu üyesi / gönüllü.</li>
-                    <li><strong>IEEE:</strong> Üniversite öğrenci kulübü üyesi.</li>
-                </ul>
+                <div class="f-col f-col-right">
+                    <button class="btn-back-to-top" id="backToTopBtn">
+                        YUKARI ÇIK ↑
+                    </button>
+                </div>
             </div>
-
         </div>
-    </section>
 
-    <section id="projects" >
-        <h2 class="section-title animate-text">Projeler</h2>
-        <div class="grid-container">
+        <div class="footer-terrain-showcase" id="footerTerrainStage">
+            <canvas id="footerTerrainCanvas" class="footer-terrain-canvas"></canvas>
             
-            <div class="card reveal">
-                <div class="card-header">
-                    <div class="card-title">Echo of Fury</div>
-                </div>
-                <div class="card-subtitle">Souls-like Oyun Yapay Zekası</div>
-                <ul class="card-list">
-                    <li>Unreal Engine 5 (UE5) Blueprint kullanılarak kural tabanlı, konuma duyarlı modüler bir NPC davranış mimarisi ("Boss AI") geliştirildi.</li>
-                    <li>Oyuncunun Öklid mesafesi ve açısal konumu hesaplanarak 9 farklı saldırı modeli dinamik olarak entegre edildi.</li>
-                </ul>
+            <div class="footer-monument-wrap">
+                <h2 class="footer-monument-name" id="footerMonumentName">
+                    <span class="m-char">F</span><span class="m-char">U</span><span class="m-char">R</span><span class="m-char">K</span><span class="m-char">A</span><span class="m-char">N</span><span class="m-char m-char-space">&nbsp;</span><span class="m-char">Ç</span><span class="m-char">A</span><span class="m-char">K</span><span class="m-char">I</span><span class="m-char">C</span><span class="m-char">I</span>
+                </h2>
             </div>
 
-            <div class="card reveal">
-                <div class="card-header">
-                    <div class="card-title">Algoritma & Profil Optimizasyonu</div>
-                </div>
-                <div class="card-subtitle">Python, C++, SQL, GitHub Actions</div>
-                <ul class="card-list">
-                    <li>C++ ile LeetCode problem çözümleri ve algoritma pratikleri gerçekleştirildi.</li>
-                    <li>GitHub Actions yardımıyla profil istatistiklerinin dinamik güncellenmesi sağlandı.</li>
-                </ul>
-            </div>
-
+            <button class="footer-corner-scroll-btn" id="footerScrollTopBtn" title="Sayfa Başına Dön" aria-label="Sayfa Başına Dön">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
         </div>
-    </section>
 
-    <section id="skills">
-        <h2 class="section-title animate-text">Teknik Yetkinlikler</h2>
-        
-        <div class="skills-container">
-            <div class="skills-category reveal">
-                <h3>Programlama Dilleri</h3>
-                <div class="skillbar expert" data-skill="Python"></div>
-                <div class="skillbar advanced" data-skill="C / C++ / C#"></div>
-                <div class="skillbar intermediate" data-skill="Java"></div>
-                <div class="skillbar intermediate" data-skill="Kotlin"></div>
-                <div class="skillbar advanced" data-skill="MATLAB"></div>
-                <div class="skillbar intermediate" data-skill="PHP"></div>
-            </div>
-
-            <div class="skills-category reveal">
-                <h3>Web & Mobil & DevOps</h3>
-                <div class="skillbar expert" data-skill="HTML5 / CSS3"></div>
-                <div class="skillbar advanced" data-skill="FastAPI & Streamlit"></div>
-                <div class="skillbar advanced" data-skill="Docker & GitHub Actions"></div>
-                <div class="skillbar intermediate" data-skill="Android Geliştirme"></div>
-                <div class="skillbar intermediate" data-skill="React.js"></div>
-            </div>
-
-            <div class="skills-category reveal">
-                <h3>Veritabanı</h3>
-                <div class="skillbar expert" data-skill="SQLite"></div>
-                <div class="skillbar advanced" data-skill="MySQL"></div>
-                <div class="skillbar advanced" data-skill="SQL Server"></div>
-                <div class="skillbar intermediate" data-skill="Firebase"></div>
-            </div>
-
-            <div class="skills-category reveal">
-                <h3>Oyun Motorları & Tasarım</h3>
-                <div class="skillbar advanced" data-skill="Unreal Engine 5"></div>
-                <div class="skillbar advanced" data-skill="Figma"></div>
-                <div class="skillbar intermediate" data-skill="Unity"></div>
-                <div class="skillbar intermediate" data-skill="Ps & After Effects"></div>
+        <div class="arch-container">
+            <div class="footer-bottom-row">
+                <div class="fb-left">
+                    &copy; <span id="currentYear">2026</span> FURKAN ÇAKICI. TÜM HAKLARI SAKLIDIR.
+                </div>
+                <div class="fb-center">
+                    ESKİŞEHİR, TÜRKİYE [39.77°N • 30.52°E]
+                </div>
+                <div class="fb-right">
+                    BİLGİSAYAR MÜHENDİSİ // BACKEND & OYUN AI
+                </div>
             </div>
         </div>
-    </section>
-    <footer id="contact""">
-        <h2 class="section-title animate-text" style="color: white;">İletişime Geç</h2>
-        <p class="reveal"><i class="fas fa-envelope"></i> furkancakici2611@gmail.com</p>
-        <p class="reveal"><i class="fas fa-map-marker-alt"></i> Eskişehir / Türkiye</p>
-        <br><br>
-        <p class="copyright">&copy; 2026 Furkan Çakıcı. Tüm hakları saklıdır.</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            
-            const reveals = document.querySelectorAll(".reveal");
-            const revealOptions = {
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px"
-            };
+    <div class="arch-toast" id="toastNotification" role="alert" aria-live="assertive">
+        <span class="toast-dot"></span>
+        <span id="toastMsg">Panoya kopyalandı</span>
+    </div>
 
-            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("active");
-                        observer.unobserve(entry.target); 
-                    }
-                });
-            }, revealOptions);
-
-            reveals.forEach(reveal => {
-                revealOnScroll.observe(reveal);
-            });
-
-            
-            const textElements = document.querySelectorAll('.animate-text');
-            
-            textElements.forEach(el => {
-                const text = el.textContent.trim();
-                const words = text.split(' ');
-                el.innerHTML = ''; 
+    <div class="arch-modal" id="projectModal" aria-hidden="true">
+        <div class="modal-scrim" id="modalScrim"></div>
+        <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close-trigger" id="modalCloseTrigger" aria-label="Kapat">
+                [ ESC / KAPAT ✕ ]
+            </button>
+            <div class="modal-inner-content" id="modalContent">
                 
-                words.forEach((word, index) => {
-                    const wrapper = document.createElement('span');
-                    wrapper.className = 'word-wrapper';
-                    
-                    const wordSpan = document.createElement('span');
-                    wordSpan.className = 'word';
-                    wordSpan.innerHTML = word + '&nbsp;'; 
-                    
-                    wordSpan.style.transitionDelay = `${index * 0.05}s`;
-                    
-                    wrapper.appendChild(wordSpan);
-                    el.appendChild(wrapper);
-                });
-                el.classList.add('ready'); 
-            });
+            </div>
+        </div>
+    </div>
 
-            const textObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const words = entry.target.querySelectorAll('.word');
-                        words.forEach(w => w.classList.add('active')); 
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1, rootMargin: "0px 0px -20px 0px" });
+    <div class="custom-cursor" id="customCursor" aria-hidden="true">
+        <div class="cursor-dot" id="cursorDot"></div>
+        <div class="cursor-ring" id="cursorRing">
+            <span class="cursor-label" id="cursorLabel"></span>
+        </div>
+    </div>
 
-            textElements.forEach(el => textObserver.observe(el));
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
